@@ -1,18 +1,11 @@
-.*
-*.o
-*.a
-*.bak
-*~
-*.so
-*.log
-
+### git's track ignore file-list.
+### ctags and cscope files
 tags
-
 cscope.in.out
 cscope.out
 cscope.po.out
 
-# Source Insight
+### Source Insight files
 *.IAB
 *.IAD
 *.IMB
@@ -25,17 +18,20 @@ cscope.po.out
 *.WK3
 *.SearchResults
 
-# SlickEdit
+### SlickEdit files
 *.vpwhist
 *.vtg
 *.vpj
 *.vpw
 
-*.gz
-*.bz2
-
-mtcping-*/
-
-# Add other ignore the trace files
-tcp_server
+#*.o
+#*.a
+#*.bak
+#*~
+#*.so
+#*.log
+#*.gz
+#*.bz2
 lib/
+include/
+libyhsocket.so

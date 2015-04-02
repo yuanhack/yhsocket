@@ -13,8 +13,10 @@ HED=yhsocket.h yhprotocol.h
 $(DEST): $(SRC) $(HED)
 	$(CC) $(CFLAGS) $(SO_MACRO) -o $@ $^ \
 		&& mkdir -p lib \
-		&& cp $(DEST) yh*.h lib 
+		&& mkdir -p include \
+		&& cp $(DEST) lib \
+		&& cp $(HED)  include
 clean:
-	rm -rf $(DEST) lib
+	rm -rf $(DEST) lib include
 
 
